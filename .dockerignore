@@ -1,0 +1,17 @@
+# Node & vendor dependencies
+node_modules
+vendor
+
+# Git
+.git
+.gitignore
+
+# Laravel environment
+.env
+
+# Logs & caches
+npm-debug.log
+
+# Docker files (optional)
+Dockerfile
+docker-compose.yml

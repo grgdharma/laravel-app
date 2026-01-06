@@ -61,6 +61,45 @@ http://127.0.0.1:8000
 ```bash
 php artisan test
 ```
+
+# Laravel 12 Application with Docker
+
+This repository contains a **Laravel 12 application** configured to run using **Docker**, including:
+
+- PHP 8.3 + FPM
+- Nginx
+- MySQL
+- phpMyAdmin (optional)
+- Apple Silicon compatible
+
+---
+
+## 📋 Prerequisites
+
+Before running the project, ensure you have:
+
+- Docker Desktop installed (macOS, Windows, Linux)
+- Docker Engine & Docker Compose
+- Git
+
+Check Docker:
+```bash
+docker --version
+docker compose version
+```
+## 🚀 Quick Start
+Build and start all containers:
+```bash
+docker compose up -d --build
+```
+This will:
+- Build PHP and Nginx images
+- Start all services: app, nginx, mysql and phpMyAdmin
+
+Map ports:
+- Laravel: http://localhost:8000
+- phpMyAdmin: http://localhost:8080
+
 ## 🔐 Security
 If you discover a security vulnerability, please report it responsibly.
 Do not disclose vulnerabilities publicly.
